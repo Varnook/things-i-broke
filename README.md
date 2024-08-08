@@ -1,6 +1,8 @@
 # Index
 1. [Arch](#arch)
     - [Failed to mount boot](#failed-to-mount-boot)
+2. [Drivers](#Drivers)
+    - [Wifi](#Wifi)
 
 ## Arch
 ### Failed to mount boot
@@ -25,5 +27,5 @@ This likely happened when I needed to update the `linux-headers` package in orde
 The fix was to update `linux` and `linux-headers` using the packages located in `/var/cache/pacman/pkg/`, making sure they both had the same version. I also removed the modules installed with dkms, just in case. After that my computer booted normally, and I was able to do a full system upgrade without any more issues.
 
 ## Drivers
-### wifi
+### Wifi
 - https://github.com/aircrack-ng/rtl8812au/issues/1153
