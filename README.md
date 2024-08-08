@@ -23,3 +23,7 @@ I was able to log in as root and use the pc normally.
 This likely happened when I needed to update the `linux-headers` package in order to be able to build the module [vendor-reset](https://github.com/gnif/vendor-reset.git). However, when doing so, I didn't update `linux`and probably ended up with the kernel version not matching that of its headers. It seemed to be a common cause of the problem when I looked online.
 
 The fix was to update `linux` and `linux-headers` using the packages located in `/var/cache/pacman/pkg/`, making sure they both had the same version. I also removed the modules installed with dkms, just in case. After that my computer booted normally, and I was able to do a full system upgrade without any more issues.
+
+## Drivers
+### wifi
+- https://github.com/aircrack-ng/rtl8812au/issues/1153
